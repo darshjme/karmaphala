@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-feedback"
+version = "0.1.0"
+description = "Human-in-the-loop feedback collection for LLM agents: approval gates, correction capture, feedback storage, learning from rejections"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+keywords = ["llm", "agents", "feedback", "hitl", "human-in-the-loop", "ai"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/darshjme/agent-feedback"
+Repository = "https://github.com/darshjme/agent-feedback"
+
+[tool.setuptools.packages.find]
+where = ["src"]
