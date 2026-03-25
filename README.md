@@ -1,10 +1,12 @@
 <div align="center">
 
-<img src="assets/agent-feedback-hero.png" alt="agent-feedback — Vedic Arsenal" width="100%" />
+<img src="assets/agent-feedback-hero.png" alt="agent-feedback — Vedic Arsenal by Darshankumar Joshi" width="100%" />
 
 # 🪷 agent-feedback
 
-### *कर्मफल* — Karmaphala — the fruit of agent actions
+<h3><em>कर्मफल</em></h3>
+
+> *Karmaphala — the fruit of agent actions*
 
 **Human-in-the-loop feedback collection for LLM agents: approval gates, correction capture, feedback storage, learning from rejections**
 
@@ -39,6 +41,19 @@ Or clone directly:
 git clone https://github.com/darshjme/agent-feedback.git
 cd agent-feedback
 pip install -e .
+```
+
+## How It Works
+
+```mermaid
+flowchart LR
+    A[Input] --> B[agent-feedback]
+    B --> C{Process}
+    C -- Success --> D[Output]
+    C -- Error --> E[Handle / Retry]
+    E --> B
+    style B fill:#6b21a8,color:#fff
+    note["Feedback — Zero Dependencies"]
 ```
 
 ## Quick Start
@@ -90,7 +105,7 @@ MIT — use freely, build freely.
 
 <div align="center">
 
-**Built with 🪷 by [Darshankumar Joshi](https://github.com/darshjme)**
+**Built with 🪷 by [Darshankumar Joshi](https://github.com/darshjme)** · [@thedarshanjoshi](https://twitter.com/thedarshanjoshi)
 
 *"कर्मण्येवाधिकारस्ते मा फलेषु कदाचन"*
 *Your right is to action alone, never to the fruits thereof.*
